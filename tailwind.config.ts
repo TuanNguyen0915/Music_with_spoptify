@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
 const config: Config = {
   content: [
@@ -14,7 +14,20 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    animation: {
+      marquee: "marquee 10s linear infinite",
+    },
+    keyframes: {
+      marquee: {
+        "0%": {
+          transform: "translateX(0%)",
+        },
+        "100%": {
+          transform: "translateX(-150%)",
+        },
+      },
+    },
   },
   plugins: [],
-};
-export default config;
+}
+export default config
